@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Backup3", "Backup3\Backup3.fsproj", "{91C86DCF-1D47-4412-A33B-17E47FC777E1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Backup3Test", "Backup3Test\Backup3Test.fsproj", "{CF80829A-7B10-48D8-AC46-A6ECB2034EAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91C86DCF-1D47-4412-A33B-17E47FC777E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C86DCF-1D47-4412-A33B-17E47FC777E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C86DCF-1D47-4412-A33B-17E47FC777E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C86DCF-1D47-4412-A33B-17E47FC777E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF80829A-7B10-48D8-AC46-A6ECB2034EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF80829A-7B10-48D8-AC46-A6ECB2034EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF80829A-7B10-48D8-AC46-A6ECB2034EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF80829A-7B10-48D8-AC46-A6ECB2034EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
