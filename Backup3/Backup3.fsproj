@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Enumerator.fs" />
         <Compile Include="Crypto\Random.fs" />
         <Compile Include="Crypto\Scrypt.fs" />
         <Compile Include="Program.fs" />
