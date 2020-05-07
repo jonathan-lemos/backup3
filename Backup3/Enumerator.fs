@@ -19,3 +19,4 @@ let rec Rest<'a> (s: IEnumerator<'a>) =
     match s.MoveNext() with
     | false -> List.empty<'a>
     | true -> s.Current :: Rest s
+

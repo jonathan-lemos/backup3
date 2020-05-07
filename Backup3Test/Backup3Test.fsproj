@@ -8,14 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="nunit" Version="3.12.0"/>
-        <PackageReference Include="NUnit3TestAdapter" Version="3.15.1"/>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0"/>
+        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Include="UnitTest1.fs"/>
-        <Compile Include="Program.fs"/>
+        <Compile Include="ScryptTest.fs" />
+        <Compile Include="Aes256GcmTest.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Backup3\Backup3.fsproj" />
     </ItemGroup>
 
 </Project>

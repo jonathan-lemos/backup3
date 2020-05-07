@@ -9,12 +9,13 @@
         <Compile Include="Enumerator.fs" />
         <Compile Include="Crypto\Random.fs" />
         <Compile Include="Crypto\Scrypt.fs" />
+        <Compile Include="Crypto\Aes256Gcm.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="BouncyCastle.NetCore" Version="1.8.6" />
-      <PackageReference Include="CryptSharpOfficial" Version="2.1.0" />
+      <PackageReference Include="Norgerman.Cryptography.Scrypt" Version="2.1.0" />
     </ItemGroup>
 
 </Project>
