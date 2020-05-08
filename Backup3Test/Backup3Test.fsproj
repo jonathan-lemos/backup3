@@ -16,6 +16,7 @@
     <ItemGroup>
         <Compile Include="ScryptTest.fs" />
         <Compile Include="Aes256GcmTest.fs" />
+        <Compile Include="EasyEncryptTest.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 

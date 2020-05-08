@@ -10,6 +10,8 @@ type Result =
     | Error of string
 
 let Process (encrypt: bool) (macLen: int) (key: byte array) (iv: byte array) (data: seq<byte array>) =
+    let macLen = macLen * 8
+    
     if key.Length <> 32 then
         Error "Key length must be 32"
     else

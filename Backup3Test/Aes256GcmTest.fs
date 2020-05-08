@@ -31,7 +31,7 @@ let Aes256GcmEncryptDecrypt () =
         |> Seq.toArray
 
     let enc =
-        (match Encrypt 128 key iv bigData with
+        (match Encrypt 16 key iv bigData with
         | Bytes b -> b
         | Error s ->
             Assert.Fail(s)
@@ -39,7 +39,7 @@ let Aes256GcmEncryptDecrypt () =
         |> Seq.toArray
 
     let dec =
-        (match Decrypt 128 key iv enc with
+        (match Decrypt 16 key iv enc with
          | Bytes b -> b
          | Error s ->
              Assert.Fail(s)

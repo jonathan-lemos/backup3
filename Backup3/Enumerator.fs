@@ -4,11 +4,15 @@ open System.Collections.Generic
 
 let rec First<'a> (n: int) (s: IEnumerator<'a>) =
     match n with
-    | 0 -> List.empty<'a>
+    | x when x <= 0 -> Seq.empty<'a>
     | _ ->
         match s.MoveNext() with
-        | false -> List.empty<'a>
-        | true -> s.Current :: First (n - 1) s
+        | false -> Seq.empty<'a>
+        | true ->
+            seq {
+                yield s.Current
+                yield! (First (n - 1) s)
+            }
 
 let Next<'a> (s: IEnumerator<'a>) =
     match s.MoveNext() with
@@ -17,6 +21,9 @@ let Next<'a> (s: IEnumerator<'a>) =
 
 let rec Rest<'a> (s: IEnumerator<'a>) =
     match s.MoveNext() with
-    | false -> List.empty<'a>
-    | true -> s.Current :: Rest s
-
+    | false -> Seq.empty<'a>
+    | true ->
+        seq {
+            yield s.Current
+            yield! (Rest s)
+        }

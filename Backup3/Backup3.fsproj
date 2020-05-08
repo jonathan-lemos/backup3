@@ -6,10 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="ByteStream.fs" />
         <Compile Include="Enumerator.fs" />
+        <Compile Include="Crypto\NumberConversions.fs" />
         <Compile Include="Crypto\Random.fs" />
         <Compile Include="Crypto\Scrypt.fs" />
         <Compile Include="Crypto\Aes256Gcm.fs" />
+        <Compile Include="Crypto\EasyEncrypt.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
