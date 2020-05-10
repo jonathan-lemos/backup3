@@ -14,11 +14,13 @@
         <Compile Include="Crypto\Aes256Gcm.fs" />
         <Compile Include="Crypto\EasyEncrypt.fs" />
         <Compile Include="Program.fs" />
+        <Compile Include="Compression\XZ.fs" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="BouncyCastle.NetCore" Version="1.8.6" />
       <PackageReference Include="Norgerman.Cryptography.Scrypt" Version="2.1.0" />
+      <PackageReference Include="XZ.NET-netstandard" Version="2.0.0.2" />
     </ItemGroup>
 
 </Project>
